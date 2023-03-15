@@ -14,7 +14,7 @@
   - `pr 규칙`
     - [Baekjoon] yy-mm-dd
   - `업로드 위치`
-    - Baekjoon/주차/파일명_이름
+    - Baekjoon/주차/파일명
   - `추가 라벨 ( 선택 )`
     - `I'm trying 🔥`: 시도했지만 해결하지 못한 문제가 있는 pr
     - `help 🙋‍♂️`: 도움이 필요한 pr
