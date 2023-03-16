@@ -1,6 +1,7 @@
 from itertools import combinations
 from math import lcm
 
+
 nums = list(map(int, input().split()))
 lcm3 = []
 
