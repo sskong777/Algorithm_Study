@@ -1,6 +1,6 @@
 li = [int(input()) for _ in range(10)]
 
-mario = []
+
 cnt = 0
 for i in li:
     cnt += i
@@ -10,6 +10,5 @@ for i in li:
             cnt -= i
         break
 
-    # mario.append(cnt)
 
 print(cnt)
