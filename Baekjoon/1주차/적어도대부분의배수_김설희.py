@@ -9,4 +9,5 @@ for comb in combinations(nums, 3):
     lcm2 = lcm(lcm(a, b), c)
     lcm3.append(lcm2)
 
+    
 print(min(lcm3))
