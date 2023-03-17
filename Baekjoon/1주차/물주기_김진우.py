@@ -3,16 +3,14 @@ input = sys.stdin.readline
 
 n, k, a, b = map(int, input().split())
 #6 3 2 2
-#n개의 화분 6
-#초기 k만큼의 수분 3
-# 3 3 3 3 3 3
+#n개의 화분 
+#초기 k만큼의 수분 
 
 date = 0
 li = [] #화분
 for i in range(n):
     li.append(k)
 
-print(li)
 
 while 0 not in li:
     for i in range(a):
