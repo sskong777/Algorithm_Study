@@ -1,3 +1,4 @@
 ﻿.idea
-/src
-Algorithm.iml
+.gitmessage.txt
+out
+*.iml
