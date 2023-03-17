@@ -1,6 +1,7 @@
 import java.io.*;
 import java.util.*;
-public class Farm_양석진{
+
+public class Farm_양석진 {
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -16,10 +17,10 @@ public class Farm_양석진{
         ArrayList<Integer> result_y = new ArrayList<>();
 
 
-        for(int x = 1; x<=1000; x++){
-            for(int y=1; y<=1000; y++){
-                if(a * x + b * y == w){
-                    if(x + y == n) {
+        for (int x = 1; x <= 1000; x++) {
+            for (int y = 1; y <= 1000; y++) {
+                if (a * x + b * y == w) {
+                    if (x + y == n) {
                         result_x.add(x);
                         result_y.add(y);
                         break;
@@ -28,11 +29,11 @@ public class Farm_양석진{
             }
         }
 
-        if(result_x.size() > 1){
+        if (result_x.size() > 1) {
             bw.write("-1");
-        } else if(result_x.isEmpty()){
+        } else if (result_x.isEmpty()) {
             bw.write("-1");
-        } else{
+        } else {
             bw.write(result_x.get(0) + " " + result_y.get(0));
         }
         bw.close();
