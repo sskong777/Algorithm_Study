@@ -11,9 +11,9 @@ public class Main {
 
         ArrayList<Integer> arrayList = new ArrayList<>();
 
-        for(int a = 1; a<= 500; a++){
-            for(int b = 1; b<=500; b++){
-                if((Math.pow(a, 2) == Math.pow(b, 2) - N)){
+        for (int a = 1; a <= 500; a++) {
+            for (int b = 1; b <= 500; b++) {
+                if ((Math.pow(a, 2) == Math.pow(b, 2) - N)) {
                     arrayList.add(a);
                     arrayList.add(b);
                     break;
@@ -21,7 +21,7 @@ public class Main {
             }
         }
 
-        bw.write(String.valueOf(arrayList.size()/2));
+        bw.write(String.valueOf(arrayList.size() / 2));
         bw.close();
     }
 }
