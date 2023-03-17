@@ -6,3 +6,4 @@ for a in range(1, 501):
       cnt += 1
 
 print(cnt)
+
