@@ -8,7 +8,7 @@ def solution():
     a, b = map(int, input().split())
     ans =[]
 
-    for i in range(-1000, 10001):
+    for i in range(-1000, 1001):
         if i*(2*a-i) == b:
             ans = list(set([-i, -(2*a-i)]))
 
