@@ -2,4 +2,6 @@
 /src
 Algorithm.iml
 Baekjoon/Baekjoon.iml
+.gitmessage.txt
 out
+*.iml
