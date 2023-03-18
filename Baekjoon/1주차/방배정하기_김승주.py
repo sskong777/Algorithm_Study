@@ -15,10 +15,7 @@ print(0)
 
 ''' 
 think about
-3중 for 문이 아닌 2중 for문으로 푼 결과는 부분 성공!
-
-왜?
-
+3중 for 문이 아닌 2중 for문으로 푼 결과는 부분 성공! why..?
 for i in range((n//a)+1):
     for j in range((n//b)+1):
         if (n- (a*i + b*j)) % c ==0:
