@@ -17,5 +17,6 @@ def main():
 
 
 answer_list = main()
+
 for i in answer_list:
     print(i)
