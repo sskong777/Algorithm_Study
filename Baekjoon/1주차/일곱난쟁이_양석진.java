@@ -1,7 +1,9 @@
+package com.kosa.aps;
+
 import java.util.*;
 import java.io.*;
 
-public class Main {
+public class 일곱난쟁이_양석진 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
