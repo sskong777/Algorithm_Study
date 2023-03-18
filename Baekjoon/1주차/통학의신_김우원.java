@@ -1,9 +1,7 @@
-package com.kosa.aps;
-
 import java.io.*;
 import java.util.*;
 
-public class 통학의신 {
+public class 통학의신_김우원 {
 	
 	public static void main(String[] args) throws IOException {
 		//입력
