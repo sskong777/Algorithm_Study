@@ -1,7 +1,9 @@
+package com.kosa.aps;
+
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class 완전제곱수_양석진 {
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
