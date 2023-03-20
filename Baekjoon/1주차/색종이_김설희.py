@@ -10,4 +10,5 @@ for _ in range(n):
 ans = 0
 for i in paper:
     ans += i.count(1)
+    
 print(ans)
