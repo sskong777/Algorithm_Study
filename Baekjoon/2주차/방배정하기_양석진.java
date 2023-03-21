@@ -14,10 +14,10 @@ public class Main {
         int N = Integer.parseInt(st.nextToken());
         int result = 0;
 
-        for(int x = 0; x<=300; x++){
-            for(int y = 0; y<=300; y++){
-                for(int z = 0; z<=300; z++){
-                    if(x * A + y * B + C * z == N){
+        for (int x = 0; x <= 300; x++) {
+            for (int y = 0; y <= 300; y++) {
+                for (int z = 0; z <= 300; z++) {
+                    if (x * A + y * B + C * z == N) {
                         result = 1;
                     }
                 }
