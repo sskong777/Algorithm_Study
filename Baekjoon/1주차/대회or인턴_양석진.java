@@ -1,22 +1,22 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.*;
 public class Main {
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
+    public static void main(String[] args) {
 
-        int N = Integer.parseInt(st.nextToken());
-        int M = Integer.parseInt(st.nextToken());
-        int K = Integer.parseInt(st.nextToken());
-        int team = 0;
+        Scanner sc = new Scanner(System.in);
 
-        while(N >= 2 && M>=1 && N+M-3>=K){
-            N -= 2;
-            M--;
-            team++;
+        int a = 2 * sc.nextInt();
+        int b = sc.nextInt();
+
+        int discriminant = (int)Math.pow(a, 2) - (4 * b);
+        int root1 = ((-1 * a) + (int)Math.sqrt(discriminant)) / 2;
+        int root2 = ((-1 * a) - (int)Math.sqrt(discriminant)) / 2;
+
+        if(root1 > root2){
+            System.out.println(root2 + " " + root1);
+        }else if(root1 == root2){
+            System.out.println(root1);
+        }else if(root1 < root2) {
+            System.out.println(root1 + " " + root2);
         }
-        System.out.println(team);
     }
 }
