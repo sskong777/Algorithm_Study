@@ -2,17 +2,18 @@ n = int(input())
 works = []
 
 for _ in range(n):
-    x, y = map(int, input().split())
-    works.append([i for i in range(x, y)])
+    works.append(list(map(int, input().split())))
 
+works.sort()
 
-count = [0]*1001
-for work in range(n):
-    for i in work:
-        count[i] = 1
+result = 0
+for i in range(n):
+    total = [0]*1001
+    for j in range(n):
+        if i == j:
+            continue
+        for k in range(works[j][0], works[j][1]):
+            total[k] = 1
+    result = max(result, sum(total))
 
-print(sum(count))
-
-
-
-print(works)
+print(result)
