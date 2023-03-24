@@ -1,4 +1,5 @@
 n = int(input())
+
 point = []
 
 def checkDiff(point1, point2):
