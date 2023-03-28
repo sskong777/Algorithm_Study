@@ -3,15 +3,9 @@ import java.io.*;
 public class 뒤집어진소수_서명현 {
 
     public static void main(String[] args) throws IOException {
-        // 미완
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         long num = Long.parseLong(br.readLine());
-        if (!isPrimeNumber(num) || !validate(num)) {
-            System.out.println("no");
-            return;
-        }
-        long reverseNum = changeReverse(num);
-        if (!isPrimeNumber(reverseNum)) {
+        if (!isPrimeNumber(num) || !validate(num) || !isPrimeNumber(reverseNum)) {
             System.out.println("no");
             return;
         }
@@ -22,11 +16,8 @@ public class 뒤집어진소수_서명현 {
         long result = 0;
         while (num > 0) {
             long target = num % 10;
-            if (target == 6) {
-                target = 9;
-            }
-            if (target == 9) {
-                target = 6;
+            if (target == 6 || target == 9) {
+                target = target == 6 ? 9 : 6;
             }
             result = result * 10 + target;
             num /= 10;
