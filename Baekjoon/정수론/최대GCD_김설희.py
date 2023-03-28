@@ -3,7 +3,6 @@ from math import gcd
 n = int(input())
 
 for _ in range(n):
-    
     gcds = []
     nums = list(map(int, input().split()))
 
