@@ -36,7 +36,7 @@ public class 뒤집어진소수_양석진 {
     }
 
     public static long reverse(String s) {
-        long n = 0;
+        long n = long.parseLong(s);
         long result = 0;
         while (n > 0) {
             if (n % 10 == 6) result = result * 10 * 9;
