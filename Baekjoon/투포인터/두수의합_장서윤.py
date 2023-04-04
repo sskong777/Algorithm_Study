@@ -1,8 +1,5 @@
 n = int(input())
-a = list()
-
 a = list(map(int, input().split()))
-
 x = int(input())
 
 a.sort()
