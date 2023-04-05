@@ -8,7 +8,7 @@ round(n**0.5)
 
 G = int(input())
 
-start, end = 0, round(G**0.5)
+start, end = 1, round(G**0.5)
 result = []
 
 while True:
