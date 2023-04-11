@@ -1,11 +1,15 @@
 # [1806] 부분합
+
+"""
+# 시도1 - 시간초과
+매번 리스트의 일부분을 더해서 계산 하기 떄문
 n, s = map(int, input().split())
 num_list = list(map(int, input().split()))
 
 start, end = 0, 1
 check = True
 answer = []
-while start < end:
+while start < end and end <= n:
     interval_sum = sum(num_list[start:end])
     if interval_sum < s:
         end += 1
@@ -14,9 +18,16 @@ while start < end:
     else:
         answer.append(len(num_list[start:end]))
         check = False
-        print(answer)
+        print(min(answer))
         break
 
 if check == True:
-    print(-1)
-# print(sum(num_list[start:end]))
+    print(0)
+"""
+
+n, s = map(int, input().split())
+num_list = list(map(int, input().split()))
+
+start, end = 0, 1
+check = True
+answer = []
