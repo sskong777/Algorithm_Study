@@ -4,9 +4,9 @@ n, total = map(int, input().split())
 drinks = [int(sys.stdin.readline()) for i in range(n)]
 
 
-l, r = 0, max(drinks)
+l, r = 1, max(drinks)
 
-while l < r:
+while l <= r:
     nums = 0
     mid = (l+r) // 2
     
