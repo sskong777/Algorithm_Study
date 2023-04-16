@@ -3,7 +3,7 @@ i=min(num)
 
 while(True):
     check=0
-    for j in range(4):
+    for j in range(5):
         if(i%num[j]==0):
             check+=1
     if check >=3:
