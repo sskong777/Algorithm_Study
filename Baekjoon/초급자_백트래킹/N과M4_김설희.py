@@ -4,7 +4,6 @@ n, m = map(int, input().split())
 # 고른 수열은 비내림차순이어야함
 
 numslist = []
-
 def dfs(k):
     if len(numslist) == m:
         print(' '.join(map(str, numslist)))
