@@ -7,6 +7,7 @@ isUsed = [False for _ in range(N + 1)]
 
 ans = list()
 
+
 def func(k):
     if len(ans) == M:
         print(' '.join(ans))
@@ -19,5 +20,6 @@ def func(k):
             func(k + 1)
             isUsed[i] = False
             ans.pop()
+
 
 func(0)
