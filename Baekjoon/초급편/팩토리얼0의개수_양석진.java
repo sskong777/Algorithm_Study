@@ -14,5 +14,4 @@ public class 팩토리얼0의개수_양석진 {
         }
         System.out.println(count);
     }
-
 }
