@@ -1,6 +1,7 @@
 n, k = map(int, input().split())
 
 # 2부터 N까지!
+
 nums = [0]*(n + 1)
 
 for i in range(2, n + 1):
