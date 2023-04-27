@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-public class 에라토스테네스의체_양석진 {
+public class Main {
     public static boolean[] prime;
-    public static void main(String[] args) {
+    public static void 에라토스테네스의체_양석진(String[] args) {
         Scanner in = new Scanner(System.in);
         int N = in.nextInt();
         make_prime(N);
