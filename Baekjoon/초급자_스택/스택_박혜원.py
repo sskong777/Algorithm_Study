@@ -1,4 +1,4 @@
-# [10808] 스택
+# [10828] 스택
 
 import sys
 n = int(sys.stdin.readline())
