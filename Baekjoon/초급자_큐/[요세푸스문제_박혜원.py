@@ -1,4 +1,4 @@
-# [11866] 요세푸스 문제 0
+# [1158] 요세푸스 문제
 
 import sys
 from collections import deque
