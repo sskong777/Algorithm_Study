@@ -2,6 +2,7 @@
 import sys
 from collections import deque
 
+# 입력받기
 test_case = int(input())
 
 for _ in range(test_case):
@@ -25,4 +26,5 @@ for _ in range(test_case):
                 m += len(queue) - 1  # 목표 수가 최대값이 아니면 맨 뒤로 넣어줌
             else:
                 m -= 1
+
     print(count)
