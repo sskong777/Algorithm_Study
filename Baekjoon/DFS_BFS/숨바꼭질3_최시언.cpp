@@ -1,40 +1,58 @@
-#include <stdio.h>
-#include <stdlib.h>
- 
-int map[101][101] = {0};
-int S; //subin
-int K; //subin K
+#include <iostream>
+#include <queue>
+using namespace std;
 
-void walk(int n){
-    ans++;
-    visit[n] = 1;
-    for (int i=1; i<=computer_num; i++){
-        if (map[n][i] && !visit[i])        
-            dfs(i);
-    }
+
+int n, k;
+
+int p[100001]{};
+int w = 0;
+
+int min_w = 1000000;
+
+void shortest() {
+	queue<int> q;
+	q.push(n); 
+	p[n]=0;
+
+	while (!q.empty()) {
+		auto cur = q.front(); q.pop();
+
+		if (cur == k) {
+			min_w = p[cur];
+			return;
+		}
+		if (cur * 2 < 100001  && p[cur * 2] > p[cur]) {
+			p[cur * 2] = p[cur];
+			q.push(cur * 2);
+		}
+		 
+		if (cur + 1 < 100001 && p[cur + 1] > p[cur] + 1) {
+			p[cur + 1] = p[cur] + 1;
+			q.push(cur + 1);
+		}
+
+		if (cur - 1 >= 0 && p[cur - 1] > p[cur] + 1) {
+			p[cur - 1] = p[cur] + 1;
+			q.push(cur - 1);
+		}
+
+		
+	}
 }
 
-void teleport(int n){
-    
-    }
+int main() {
+	ios::sync_with_stdio(false);
+	cin.tie(0);
 
+	cin >> n >> k;
 
-void dfs(int n){
-    walk or teleport
-    dfs (n+1)
-}
- 
-int main(){
-    int n;
-    int x, y;
-    scanf("%d %d", &computer_num, &n);
-    for (int i=0; i<n; i++){
-        scanf("%d %d", &x, &y);
-        map[x][y] = map[y][x] = 1;
-    }
- 
-    dfs(1);
-    printf("%d\n", ans - 1);
- 
- 
+	for (int i = 0; i < 100001; i++) {
+		p[i] = 1000000;
+	}
+
+	shortest();
+
+	cout << min_w << '\n';
+	return 0;
 }
