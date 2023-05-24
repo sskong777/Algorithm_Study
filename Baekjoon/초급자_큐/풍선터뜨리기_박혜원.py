@@ -5,6 +5,7 @@ from collections import deque
 n = int(input())
 paper = list(map(int, input().split()))  # 3 2 1 -3 -1
 # balloon에 1부터 시작하는 인덱스와 함께 저장
+# list 사용해야 인덱스와 값을 튜플로 묶은 리스트를 얻을 수 있다.
 balloon = deque(list(enumerate(paper, start=1)))
 result = []
 
