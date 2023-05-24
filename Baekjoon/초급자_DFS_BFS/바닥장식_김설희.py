@@ -15,7 +15,6 @@ for i in range(n):
                 cnt += 1
         a = room[i][j]
 
-# 'ㅣ'모양의 나무 판자 개수 계산
 for j in range(m):
     a = ''
     for i in range(n):
