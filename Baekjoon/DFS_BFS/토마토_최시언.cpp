@@ -9,6 +9,19 @@ void dfs(int n){
     walk or teleport
     dfs (n+1)
 }
+
+
+
+void tomate(int a, int b){
+    int tomate = a*b;
+    ans++;
+    visit[n] = 1;
+    for (int i=1; i<=computer_num; i++){
+        if (map[n][i] && !visit[i])        
+            dfs(i);
+    }
+}
+
  
 int main(){
     int n;
@@ -22,14 +35,4 @@ int main(){
     tomato(x,y);
  
  
-}
-
-void tomate(int a, int b){
-    int tomate = a*b;
-    ans++;
-    visit[n] = 1;
-    for (int i=1; i<=computer_num; i++){
-        if (map[n][i] && !visit[i])        
-            dfs(i);
-    }
 }
