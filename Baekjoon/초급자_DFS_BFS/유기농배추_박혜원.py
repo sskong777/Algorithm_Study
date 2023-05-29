@@ -8,17 +8,13 @@ Max = 52
 dirR = [1, -1, 0, 0]  # 상,하 이동을 위한 값
 dirC = [0, 0, 1, -1]  # 좌,우 이동을 위한 값
 
-
-def dfs(y, x):
-    visited[y][x] = True
-
-    # 아래의 for문은 현재 위치로부터 상,하,좌,우를 탐색
-    for dirIdx in range(4):
-        newY = y + dirR[dirIdx]  # 다음에 탐색할 세로 좌표 계산
-        newX = x + dirC[dirIdx]  # 다음에 탐색할 가로 좌표 계산
-        # 탐색할 위치에 배추가 있고, 아직 방문하지 않았다면 다시 dfs를 호출
-        if graph[newY][newX] and not visited[newY][newX]:
-            dfs(newY, newX)  # 다음 위치에서 다시 dfs를 시작
+# 아래의 for문은 현재 위치로부터 상,하,좌,우를 탐색
+for dirIdx in range(4):
+    newY = y + dirR[dirIdx]  # 다음에 탐색할 세로 좌표 계산
+    newX = x + dirC[dirIdx]  # 다음에 탐색할 가로 좌표 계산
+    # 탐색할 위치에 배추가 있고, 아직 방문하지 않았다면 다시 dfs를 호출
+    if graph[newY][newX]
+    dfs(newY, newX)  # 다음 위치에서 다시 dfs를 시작
 
 
 T = int(input())
@@ -33,11 +29,8 @@ for _ in range(T):
         x, y = map(int, input().split())
         graph[y + 1][x + 1] = True
 
-    # 방문하지 않은 지점부터 dfs돌기
-    answer = 0
-    for i in range(1, N + 1):
-        for j in range(1, M + 1):
-            if graph[i][j] and not visited[i][j]:
-                dfs(i, j)
-                answer += 1
-    print(answer)
+count = []
+for y in range(1, N + 1):
+    for x in range(1, N + 1):
+        if graph[y][x]:
+            count.append(dfs(x, y), count=1)
