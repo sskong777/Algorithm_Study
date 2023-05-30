@@ -1,0 +1,1 @@
+T,S=map(int,input().split());print(280 if S or not (11<T<17) else 320)
