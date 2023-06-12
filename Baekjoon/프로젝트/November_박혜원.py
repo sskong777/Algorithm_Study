@@ -1,4 +1,4 @@
-# [27332] 11月(November)
+# [27332] November
 A = int(input())
 B = int(input())
 if A + (B * 7) <= 30:
