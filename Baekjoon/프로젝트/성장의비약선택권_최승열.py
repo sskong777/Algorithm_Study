@@ -1,0 +1,5 @@
+L = int(input())
+if L>228: print(4)
+elif L>217: print(3)
+elif L>205: print(2)
+else: print(1)
