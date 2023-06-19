@@ -13,10 +13,37 @@
 info = 수족관, 시청, 학교
 watch = 수족관, 시청, 학교
 """
+from itertools import product
 
-N, M = map(int(input()))
-info = []
-watch = []
-for i in range(N):
+N, M = map(int, input().split())
+info = list(map(int, input().split()))
+observe = list(map(int, input().split()))
 
-    list(map(int, input().split()))
+#  6가지 임무를, repeat=N은 N일 동안
+tasks = info + observe
+
+schedules = list(product(range(6), repeat=N))
+
+count = 0
+for schedule_idx, schedule in enumerate(schedules):
+    print(f"\nProcessing schedule {schedule_idx+1}: {schedule}")
+    last_day_place = [-1]*6
+    total_score = 0
+    for i, task in enumerate(schedule):
+        place = task % 3
+        print(f"\tDay {i+1}, Task {task}, Place {place}")
+        if last_day_place[place] == task:  # 전날에 같은 장소에서 작업했다면
+            total_score += tasks[task]//2
+            print(f"\t\tSame place as yesterday. Half score: {tasks[task]//2}")
+        else:  # 전날에 다른 장소에서 작업했다면
+            total_score += tasks[task]
+            print(
+                f"\t\tDifferent place than yesterday. Full score: {tasks[task]}")
+        last_day_place[place] = task
+    if total_score >= M:  # 기여도가 M 이상이면
+        count += 1
+        print(
+            f"\tTotal score: {total_score}. Achieved target! Current count: {count}")
+    else:
+        print(f"\tTotal score: {total_score}. Did not achieve target.")
+print(f"\nFinal count: {count}")
