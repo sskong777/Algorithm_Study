@@ -5,7 +5,6 @@ for _ in range(n):
     k = int(input())
 
     for _ in range(k):
-
         name, kind = input().split()
 
         if kind not in clothes:
