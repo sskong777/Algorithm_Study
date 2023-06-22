@@ -15,7 +15,15 @@ public class 패션왕신해빈_박주원 {
 			for (int j = 0; j < n; j++) {
 				String str = sc.next();
 				String key = sc.next();
+				set.put(key,set.getOrDefault(str, 0) + 1);
 			}
+			
+			int ans = 1;
+            for (int val : set.values()) {
+            	ans *= val + 1;
+            }
+                
+            System.out.println(ans - 1);
 		}
 	}
 }
