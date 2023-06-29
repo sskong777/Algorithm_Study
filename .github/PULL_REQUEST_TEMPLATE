@@ -1,11 +1,11 @@
 <!--
-✅ PR : [Baekjoon] yy-mm-dd 형태로 입력해 주세요.
-ex) [Baekjoon] 23-03-16
+✅ PR : [Programmers] yy-mm-dd 형태로 입력해 주세요.
+ex) [Programmers] 23-03-16
 -->
 
 <!--
-✅ 문제 : [문제 번호] 문제 이름 형태로 풀이한 문제를 적어주세요. (공백 제거)
-ex) [6131] 완전제곱수
+✅ 문제 : 풀이한 문제를 적어주세요. (공백 제거)
+ex) 완전제곱수
 -->
 ## ✏Problem Solving
 -
