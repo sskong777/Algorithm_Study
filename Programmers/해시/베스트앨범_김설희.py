@@ -18,9 +18,6 @@ def solution(genres, plays):
         genre_name = g[0]
         musics[genre_name] = sorted(musics[genre_name], key=lambda x: (-x[1], x[0]))
 
-    print(musics)
-    print(total_genres)
-
     result = []
     for g in total_genres:
         cnt = 0
