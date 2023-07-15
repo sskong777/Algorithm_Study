@@ -1,6 +1,5 @@
 from collections import deque
 
-
 def solution(bridge_length, weight, truck_weights):
     s = 0
     in_bridge = deque([0] * bridge_length)
