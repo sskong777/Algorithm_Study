@@ -1,7 +1,6 @@
 '''
 큐를 2개 만들고 queue와 minqueue는 절반씩 필요가 없음
 '''
-
 import heapq
 import time
 def solution(operations):
