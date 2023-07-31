@@ -1,4 +1,4 @@
-
+# O(1) 풀이
 def solution(brown, yellow):
     def quad(b, c):
         return [int((-b+(b**2-4*c)**0.5)/2), int((-b-(b**2-4*c)**0.5)/2)]
