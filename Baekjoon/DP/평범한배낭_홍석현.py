@@ -1,3 +1,5 @@
+from pprint import pprint
+
 N, K = map(int, input().split())
 
 w = [0] * (N+1)
@@ -15,4 +17,5 @@ for i in range(1, N+1):
         else:
             dp[i][j] = dp[i-1][j]
 
+pprint(dp)
 print(dp[N][K])
